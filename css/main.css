@@ -1,0 +1,258 @@
+/* Default CSS Code */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ts-about-body :focus * {
+    outline: 0;
+}
+
+.ts-about-body .form-group {
+    margin-bottom: 0;
+}
+
+.ts-about-body figure {
+    margin: 0;
+}
+
+.ts-about-body p,
+.ts-about-body li {
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+.ts-about-body a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ts-about-body a:hover {
+    text-decoration: none;
+}
+
+.ts-about-body a:focus {
+    color: #fff;
+}
+
+.ts-about-body .overflow {
+    overflow: hidden;
+}
+
+.ts-about-body h1,
+.ts-about-body h2,
+.ts-about-body h3,
+.ts-about-body h4,
+.ts-about-body h5,
+.ts-about-body h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.ts-about-body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ts-about-body li {
+    list-style-type: none !important;
+}
+
+.ts-about-body img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ts-about-container {
+    width: 100%;
+    max-width: 1145px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ts-about-body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #1c2127;
+}
+
+/* Hero Area */
+.ts-about-hero {
+    min-height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(
+            rgba(255, 242, 0, 0.7),
+            rgba(255, 242, 0, 0.7)
+        ),
+        url("../img/TS-Storypage-.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.ts-about-hero__content h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 80px;
+}
+
+.ts-about-hero__content p {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Hero Area */
+
+/* About Content Area */
+
+.ts-about-content-area {
+    padding: 80px 0;
+}
+
+.ts-about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.ts-about-content-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.ts-about-content-item--reverse {
+    flex-direction: row-reverse;
+}
+
+.ts-about-content-item__image {
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.ts-about-content-item__image img {
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.ts-about-content-item__info {
+    flex: 1;
+}
+
+.ts-about-content-item__info h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.ts-about-content-item__info h3 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.ts-about-content-item__desc p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.ts-about-content-item__desc p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* About Content Area */
+
+@media (max-width: 1199.98px) {
+    .ts-about-container {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .ts-about-content-item {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ts-about-container {
+        padding: 0 20px;
+    }
+
+    .ts-about-hero {
+        min-height: 500px;
+    }
+
+    .ts-about-hero__content h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .ts-about-hero__content p {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 100%;
+    }
+
+    .ts-about-content-item__image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .ts-about-content-area {
+        padding: 50px 0;
+    }
+
+    .ts-about-content-item {
+        gap: 20px;
+    }
+
+    .ts-about-content-item__info h2 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+
+    .ts-about-content-item__info h3 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .ts-about-content {
+        gap: 40px;
+    }
+}
